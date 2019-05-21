@@ -1,0 +1,369 @@
+/*通用样式*/
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-content{
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex: 1;
+    /* height: 100%; */
+    overflow-y: auto;
+}
+.head{
+   width: 100%;
+   height: 80px;
+   /* background: #324157; */
+   background: #1F2D3D;
+   font-size: 18px;
+   color: white;
+ }
+.over-fl{overflow:hidden;}
+.txt-rt {
+  text-align: right;
+}
+.txt-lt {
+  text-align: left;
+}
+.txt-center {
+  text-align: center;
+}
+.vt-align-bt {
+  vertical-align: bottom;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.vertical-m {
+  vertical-align: middle;
+}
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+.clear {
+  clear: both;
+  height: 0px;
+  overflow: hidden;
+  display: block;
+}
+.clear-inline {
+  clear: both;
+  height: 0px;
+  display: inline-block;
+}
+
+.undis {
+  display: none;
+}
+.pos-fixed {
+  position: fixed;
+}
+.dis {
+  display: block;
+}
+.mar-top30 {
+  margin-top:30px;
+}
+.mar-right40{
+  margin-right: 40px;
+}
+.mar-bottom10 {
+  margin-bottom: 10px;
+}
+.inline-dis {
+  display: inline-block;
+}
+.cursor {
+  cursor: pointer;
+}
+.strong {
+  font-weight: bold;
+}
+.f-normal {
+  font-weight: normal;
+}
+.relative {
+  position: relative;
+}
+.span10{display: inline-block;padding-right:10px;}
+.yscroll {
+  overflow-y: auto;
+}
+table tbody{
+  font-size: 14px;
+}
+
+/*通用列表样式*/
+.table-container{
+  min-width:800px;
+  width:98%;
+  margin: 0 auto;
+}
+
+/*垂直水平居中*/
+.ver-line-m {
+  margin:auto;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+/*查询*/
+.search {
+  width: 98%;
+  margin:8px 1%;
+  height: auto;
+}
+
+.search>div>span{
+  display: inline-block;
+  margin-top:6px;
+}
+.search>ul {
+  overflow: hidden;
+}
+.search>ul li{
+  float: left;
+  width:15%;
+  min-width:200px;
+  margin-left:10px;
+  margin-top:10px;
+}
+.width200{
+  width: 200px;
+}
+.pad-left28{
+  padding-left: 28px;
+}
+.mar-left30 {
+  margin-left:30px;
+}
+.mar-right10 {
+  margin-right:10px;
+}
+.mar-top10 {
+  margin-top:10px;
+}
+.redCol {
+  color: red;
+}
+/*模态框样式*/
+.modal-title{
+  font-size: 16px;
+  color: #1d93ed;
+  line-height: 40px;
+}
+.modal-line {
+  margin: 5px auto;
+}
+.modal-line label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+.width260{
+  width: 260px;
+}
+.width300{
+  width: 300px;
+}
+.width500{
+  width: 500px;
+}
+.txt-msg {
+  line-height: 30px;
+  font-size: 14px;
+  color: red;
+}
+/*详情页面标题样式*/
+.leftPic {
+  margin-left: 7%;
+  width:33%;
+  float: left;
+}
+.tableTitle h1 {
+  float: left;
+  margin-left: 50px;
+  color: #1d93ed;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+.rightPic {
+  float: left;
+  margin-left: 50px;
+  width:33%;
+}
+.leftPic  .leftLine {
+  width: 90%;
+  /*border-bottom: 1px solid #e6e6e6;*/
+  background: -webkit-linear-gradient(left, #fff , #1d93ed); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #fff, #1d93ed); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #fff, #1d93ed); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #fff , #1d93ed);
+  height: 2px;
+  top: 20px;
+  position: relative;
+}
+.leftPic .littlePic{
+  width:6px;
+  height: 6px;
+  background-color: #1d93ed;
+  left:90%;
+  top: 16px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+}
+.leftPic .bigPic {
+  width:15px;
+  height: 15px;
+  background-color: #e6e6e6;
+  left:95%;
+  top: 6px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+}
+.rightPic .bigPic {
+  width:15px;
+  height: 15px;
+  background-color: #e6e6e6;
+  top: 12px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+}
+.rightPic .littlePic{
+  width:6px;
+  height: 6px;
+  background-color: #1d93ed;
+  left:31px;
+  top: 18px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+}
+.rightPic  .leftLine {
+  width: 90%;
+  /*border-bottom: 1px solid #e6e6e6;*/
+  background: -webkit-linear-gradient(left, #fff , #1d93ed); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(left, #fff, #1d93ed); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(left, #fff, #1d93ed); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to left, #fff , #1d93ed);
+  height: 2px;
+  left: 38px;
+  top: 14px;
+  position: relative;
+}
+.tableTitle{
+  height: 40px;
+}
+/*结束*/
+
+.linkClass{
+  min-width:800px;
+  width:98%;
+  margin: 0 auto;
+  height: 30px;
+  padding-bottom: 10px;
+}
+.rowBgColor td{
+  background-color: #f8f8f8 !important;
+}
+.cardTab {
+  max-height: 130px;
+  overflow-x: auto;
+}
+
+.net-container {
+  width: 200%;
+  overflow: hidden;
+}
+
+.net-container li {
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  float: left;
+  background: url("../../assets/img/block_bg.png") no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.net-container li p {
+  padding: 0 8px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.net-container li h3 {
+  font-size: 28px;
+  line-height: 46px;
+  font-weight: bold;
+}
+
+.nav-tab ul {
+  overflow: hidden;
+}
+
+.nav-tab li {
+  float: right;
+  width: 180px;
+  border-bottom: 5px solid #fff;
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 34px;
+  color: #c0c0c0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-tab li.nav-selected {
+  color: #1d93ed;
+  border-bottom: 2px solid #1d93ed;
+}
+@media screen and (min-width: 960px) and (max-width: 1366px) {
+  .net-container li {
+    width: 130px;
+    height: 80px;
+    margin: 2px;
+  }
+
+  .net-container li p {
+    padding: 0 4px;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 8px;
+  }
+
+  .net-container li h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

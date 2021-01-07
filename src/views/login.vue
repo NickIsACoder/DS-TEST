@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="content">
-      <div class="top">德生科技产品演示清单</div>
+      <div class="top">演示清单</div>
       <div class="center">
         <form>
           <div class="block-input username">

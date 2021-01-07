@@ -15,7 +15,7 @@ export default {
   name: 'headTop',
   data () {
     return {
-      title: '德生科技产品演示清单',
+      title: '演示清单',
       username: sessionStorage.getItem('userName')
     }
   },

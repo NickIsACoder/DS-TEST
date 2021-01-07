@@ -41,6 +41,7 @@
         },
         methods: {
             pageGo(_item) {
+                console.log(';ss')
                 this.$router.push({name: `${_item}`});
             },
         },

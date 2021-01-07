@@ -11,6 +11,8 @@ import quill from '../views/editor/quill';  // 富文本quill
 import mpoint from '../views/others/mpoint';  // 锚点
 import vuex from '../views/vuex/vuex';  // vuex测试页
 
+import fortest from '../views/fortest/test';  // 
+
 Vue.use(Router)
 
 export default new Router({
@@ -19,6 +21,7 @@ export default new Router({
     {
       path: '/index', component: index, name: 'index',  redirect: {name: 'welcome'}, 
         children: [
+            {  path: 'fortest', component: fortest, name: 'fortest'  },
             {  path: 'welcome', component: welcome, name: 'welcome'  },
             {  path: 'page1', component: page1, name: 'page1'  },
             {  path: 'page2', component: page2, name: 'page2'  },
